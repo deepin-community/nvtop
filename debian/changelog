@@ -1,5 +1,66 @@
-template-repository (1.0-1) unstable; urgency=medium
+nvtop (3.0.2-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream release 3.0.2.
+  * Bump Standards-Version to 4.6.2, no changes needed.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Andreas Beckmann <anbe@debian.org>  Mon, 31 Jul 2023 13:51:15 +0200
+
+nvtop (3.0.1-1) unstable; urgency=medium
+
+  * New upstream release 3.0.1.
+  * Enable support for AMD and Intel GPUs.  (Closes: #1025348)
+
+ -- Andreas Beckmann <anbe@debian.org>  Mon, 05 Dec 2022 23:24:49 +0100
+
+nvtop (2.0.3-1) unstable; urgency=medium
+
+  [ Andreas Beckmann ]
+  * New upstream release 2.0.3.  (Closes: #1014285, #1018848)
+  * Bump Standards-Version to 4.6.1, no changes needed.
+
+  [ Debian Janitor ]
+  * Set field Upstream-Name in debian/copyright.
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata (already
+    present in machine-readable debian/copyright).
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on cmake.
+
+ -- Andreas Beckmann <anbe@debian.org>  Thu, 29 Sep 2022 19:26:57 +0200
+
+nvtop (1.2.2-1) unstable; urgency=medium
+
+  * Update to upstream release 1.2.2.
+  * Update the debian metadata fields to the latest version.
+  * Remove libnvidia-ml from the build dependencies.
+  * Bump Standards-Version to 4.6.0, no changes needed.
+
+ -- Maxime Schmitt <maxime.schmitt91@gmail.com>  Wed, 15 Sep 2021 19:50:02 +0200
+
+nvtop (1.1.0-1) unstable; urgency=medium
+
+  [ Maxime Schmitt ]
+  * Update to new upstream release 1.1.0.
+
+  [ Andreas Beckmann ]
+  * Bump Standards-Version to 4.5.1, no changes needed.
+
+ -- Maxime Schmitt <maxime.schmitt91@gmail.com>  Thu, 07 Jan 2021 16:10:44 +0100
+
+nvtop (1.0.0-2) unstable; urgency=medium
+
+  * Switch nvidia-specific Build-Depends to libnvidia-ml-dev.
+  * Switch to debhelper-compat (= 13).
+  * Set Rules-Requires-Root: no.
+  * Bump Standards-Version to 4.5.0, no changes needed.
+  * Add explanation for placement in contrib.
+  * Set Maintainer to Debian NVIDIA Maintainers, move Maxime to Uploaders.
+  * Add myself to Uploaders.
+
+ -- Andreas Beckmann <anbe@debian.org>  Wed, 11 Nov 2020 16:05:12 +0100
+
+nvtop (1.0.0-1) unstable; urgency=low
+
+  * Initial release. (Closes: #918702)
+
+ -- Maxime Schmitt <maxime.schmitt91@gmail.com>  Thu, 10 Jan 2019 10:23:41 +0100
